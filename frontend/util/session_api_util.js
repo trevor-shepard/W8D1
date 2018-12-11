@@ -5,7 +5,7 @@ export const signupUser = (user) => (
     method: 'post',
     data: {user}
   })
-)
+);
 
 export const loginUser = (user) => (
   $.ajax({
@@ -13,10 +13,10 @@ export const loginUser = (user) => (
     method: 'post',
     data: {user}
   })
-)
+);
 export const logoutUser = () => (
   $.ajax({
     url: '/api/session',
     method: 'delete'
   })
-)
+);
